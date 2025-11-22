@@ -1,0 +1,113 @@
+# Laravel
+/.env
+/.env.backup
+/.env.production
+/.phpunit.result.cache
+/phpunit.xml
+Homestead.json
+Homestead.yaml
+auth.json
+
+# Dependencies
+/vendor
+/node_modules
+/package-lock.json
+/yarn.lock
+
+# Build files
+/public/build
+/public/hot
+/public/mix-manifest.json
+
+# Storage
+/storage/*.key
+/storage/pail
+/storage/app/public/*
+!/storage/app/public/.gitignore
+/storage/logs/*
+!/storage/logs/.gitignore
+/storage/framework/cache/*
+!/storage/framework/cache/.gitignore
+/storage/framework/sessions/*
+!/storage/framework/sessions/.gitignore
+/storage/framework/testing/*
+!/storage/framework/testing/.gitignore
+/storage/framework/views/*
+!/storage/framework/views/.gitignore
+
+# Database
+*.sqlite
+*.sqlite3
+*.db
+/database/*.sqlite
+/database/*.sqlite3
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE & Editor files
+/.idea
+/.vscode
+/.fleet
+/.nova
+/.phpactor.json
+/.phpunit.cache
+/.zed
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Documentation files (Markdown) - Exclude all .md files
+*.md
+
+# Template files (production config templates)
+*.template
+env.production.template
+
+# Cache files
+/bootstrap/cache/*
+!/bootstrap/cache/.gitignore
+.cache/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+
+# Uploaded files
+/storage/app/public/coffee-shop-images/*
+!/storage/app/public/coffee-shop-images/.gitignore
+
+# Compiled assets (if using Vite/Mix)
+/public/build
+/public/hot
+
+# Testing
+/.phpunit.cache
+/coverage
+.phpunit.result.cache
+
+# Misc
+*.zip
+*.tar.gz
+*.rar
