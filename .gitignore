@@ -75,9 +75,8 @@ ehthumbs.db
 Thumbs.db
 Desktop.ini
 
-# Documentation files (Markdown) - Exclude all .md files except README.md
+# Documentation files (Markdown) - Exclude all .md files
 *.md
-!README.md
 
 # LaTeX files and compilation artifacts
 *.tex
@@ -105,6 +104,10 @@ presentation.*
 !public/**/*.jpg
 !public/**/*.jpeg
 !public/**/*.gif
+
+# Shell scripts (deployment scripts)
+*.sh
+HTTPS_QUICK_SETUP.sh
 
 # Template files (production config templates)
 *.template
