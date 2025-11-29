@@ -75,8 +75,36 @@ ehthumbs.db
 Thumbs.db
 Desktop.ini
 
-# Documentation files (Markdown) - Exclude all .md files
+# Documentation files (Markdown) - Exclude all .md files except README.md
 *.md
+!README.md
+
+# LaTeX files and compilation artifacts
+*.tex
+*.aux
+*.log
+*.nav
+*.out
+*.pdf
+*.snm
+*.synctex.gz
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex
+presentation.*
+
+# Screenshots and images for presentation (exclude root-level images folder)
+/images/
+# Exclude images in root, but keep public folder images
+/*.png
+/*.jpg
+/*.jpeg
+/*.gif
+!public/**/*.png
+!public/**/*.jpg
+!public/**/*.jpeg
+!public/**/*.gif
 
 # Template files (production config templates)
 *.template
