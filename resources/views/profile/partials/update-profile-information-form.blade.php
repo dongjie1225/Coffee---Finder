@@ -1,12 +1,12 @@
 <p class="text-muted mb-3">Update your account's profile information and email address.</p>
 
-<form id="send-verification" method="post" action="{{ route('verification.send') }}">
-    @csrf
-</form>
+    <form id="send-verification" method="post" action="{{ route('verification.send') }}">
+        @csrf
+    </form>
 
 <form method="post" action="{{ route('profile.update') }}">
-    @csrf
-    @method('patch')
+        @csrf
+        @method('patch')
 
     <div class="mb-3">
         <label for="name" class="form-label">Name</label>
@@ -21,7 +21,7 @@
         @error('name')
             <div class="invalid-feedback">{{ $message }}</div>
         @enderror
-    </div>
+        </div>
 
     <div class="mb-3">
         <label for="email" class="form-label">Email</label>
@@ -36,27 +36,27 @@
             <div class="invalid-feedback">{{ $message }}</div>
         @enderror
 
-        @if ($user instanceof \Illuminate\Contracts\Auth\MustVerifyEmail && ! $user->hasVerifiedEmail())
+            @if ($user instanceof \Illuminate\Contracts\Auth\MustVerifyEmail && ! $user->hasVerifiedEmail())
             <div class="alert alert-warning mt-2">
                 <p class="mb-1">Your email address is unverified.</p>
                 <button form="send-verification" class="btn btn-link p-0 text-decoration-none">
                     Click here to re-send the verification email.
-                </button>
+                        </button>
 
-                @if (session('status') === 'verification-link-sent')
+                    @if (session('status') === 'verification-link-sent')
                     <p class="mt-2 mb-0 text-success">
                         A new verification link has been sent to your email address.
-                    </p>
-                @endif
-            </div>
-        @endif
-    </div>
+                        </p>
+                    @endif
+                </div>
+            @endif
+        </div>
 
     <div class="d-flex align-items-center gap-3">
         <button type="submit" class="btn btn-primary">Save</button>
 
-        @if (session('status') === 'profile-updated')
+            @if (session('status') === 'profile-updated')
             <span class="text-success">Saved.</span>
-        @endif
-    </div>
-</form>
+            @endif
+        </div>
+    </form>

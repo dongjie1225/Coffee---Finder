@@ -42,7 +42,7 @@ class CoffeeShopPolicy
     public function update(?User $user, CoffeeShop $coffeeShop): bool
     {
         if ($user === null) {
-            return false;
+        return false;
         }
         return $user->id === $coffeeShop->user_id || $user->isAdmin();
     }
@@ -54,7 +54,7 @@ class CoffeeShopPolicy
     public function delete(?User $user, CoffeeShop $coffeeShop): bool
     {
         if ($user === null) {
-            return false;
+        return false;
         }
         return $user->id === $coffeeShop->user_id || $user->isAdmin();
     }

@@ -22,7 +22,7 @@
             <div class="w-100" style="max-width: 400px;">
                 <div class="card shadow">
                     <div class="card-body p-4">
-                        {{ $slot }}
+                {{ $slot }}
                     </div>
                 </div>
             </div>

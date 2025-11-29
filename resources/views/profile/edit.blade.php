@@ -11,9 +11,9 @@
                 <h5 class="mb-0">Profile Information</h5>
             </div>
             <div class="card-body">
-                @include('profile.partials.update-profile-information-form')
+                    @include('profile.partials.update-profile-information-form')
+                </div>
             </div>
-        </div>
 
         <!-- Update Password -->
         <div class="card mb-4 shadow-sm">
@@ -21,9 +21,9 @@
                 <h5 class="mb-0">Update Password</h5>
             </div>
             <div class="card-body">
-                @include('profile.partials.update-password-form')
+                    @include('profile.partials.update-password-form')
+                </div>
             </div>
-        </div>
 
         <!-- Delete Account -->
         <div class="card mb-4 shadow-sm border-danger">
@@ -31,7 +31,7 @@
                 <h5 class="mb-0">Delete Account</h5>
             </div>
             <div class="card-body">
-                @include('profile.partials.delete-user-form')
+                    @include('profile.partials.delete-user-form')
             </div>
         </div>
     </div>

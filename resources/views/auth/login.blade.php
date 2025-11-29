@@ -10,10 +10,10 @@
                 </div>
             @endif
 
-            <form method="POST" action="{{ route('login') }}">
-                @csrf
+    <form method="POST" action="{{ route('login') }}">
+        @csrf
 
-                <!-- Email Address -->
+        <!-- Email Address -->
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
                     <input id="email" 
@@ -27,23 +27,23 @@
                     @error('email')
                         <div class="invalid-feedback">{{ $message }}</div>
                     @enderror
-                </div>
+        </div>
 
-                <!-- Password -->
+        <!-- Password -->
                 <div class="mb-3">
                     <label for="password" class="form-label">Password</label>
                     <input id="password" 
                            class="form-control @error('password') is-invalid @enderror"
-                           type="password"
-                           name="password"
+                            type="password"
+                            name="password"
                            required 
                            autocomplete="current-password">
                     @error('password')
                         <div class="invalid-feedback">{{ $message }}</div>
                     @enderror
-                </div>
+        </div>
 
-                <!-- Remember Me -->
+        <!-- Remember Me -->
                 <div class="mb-3 form-check">
                     <input id="remember_me" 
                            type="checkbox" 
@@ -51,15 +51,15 @@
                            name="remember">
                     <label class="form-check-label" for="remember_me">
                         Remember me
-                    </label>
-                </div>
+            </label>
+        </div>
 
                 <div class="d-flex justify-content-between align-items-center">
-                    @if (Route::has('password.request'))
+            @if (Route::has('password.request'))
                         <a class="text-decoration-none" href="{{ route('password.request') }}">
                             Forgot your password?
-                        </a>
-                    @endif
+                </a>
+            @endif
 
                     <button type="submit" class="btn btn-primary">
                         Log in
